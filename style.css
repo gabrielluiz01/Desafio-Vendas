@@ -1,0 +1,548 @@
+*{ padding: 0; margin: 0; box-sizing: border-box; text-decoration: none; font-family: 'Pridi', serif; 
+list-style: none;
+}
+@import url('https://fonts.googleapis.com/css?family=Pridi');
+
+
+.containermenu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: fixed;
+	border-bottom: 1px solid #000;
+	z-index: 3;
+	background-color: #fff;
+}
+.containermenuImage{
+	width: 50px;
+	height: 50px;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+.containermenuLogo{
+	height: 100px;
+}
+.hamburguer{
+	display: block;
+	background-color: #000;
+	width: 30px;
+	height: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
+	border-radius: 20%;
+	transition: .5s ease-in-out;
+	position: relative;
+    left: 10px;
+}
+.hamburguer:before, 
+.hamburguer:after{
+	background-color: #000;
+	content: '';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	bottom: 10px;
+	transition: .5s ease-in-out;
+}
+.hamburguer:before{
+	top: 10px;
+}
+.hambuguer:after{
+	top: -10px;
+}
+input{
+	display: none;
+}
+ input:checked ~ label .hamburguer {
+    transform: rotate(45deg);
+}
+input:checked ~ label .hamburguer:before {
+    transform: rotate(90deg);
+        top: 0;
+}
+
+input:checked ~ label .hamburguer:after {
+    transform: rotate(90deg);
+    bottom: 0;
+}
+.containersale{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around; 
+	align-items: flex-end;
+	margin-top: 80px;
+	margin-top: 150px;
+}
+.colectionspromotions{
+	font-size: 30px;
+	text-align: center;
+	position: relative;
+	top: 120px;
+
+}	
+.containarsaleBlock__camisas{
+	width: 30%;
+	height: 250px;
+	background-color: #FFF695;
+	display: flex;
+	justify-content: space-between;
+	flex-flow:	wrap-reverse;
+	align-items: center;	
+	border-radius: 15%;
+}
+.containersaleBlock__camisasImage{
+	width: 150px;
+	height: 150px;
+	position: relative;
+	left: 60%;
+	bottom: 15%;
+
+}
+.containersaleBlock__camisasLine{
+	width: 30%;
+	height: 5px;
+	border-radius: 15%;	
+	background-color: #29E80E;
+	position: relative;
+	bottom: 15%;
+	right: 34%;
+}
+.containersaleBlock__camisasSubtitle{
+	font-size: 30px;
+	position: relative;
+	right: 65%;
+	bottom: 25%;
+}
+.containersaleBlock__camisasParagraph:hover{
+	font-size: 30px;
+ 	background: -webkit-linear-gradient(#000, #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.containersaleBlock__camisasParagraph{
+	font-size: 25px;
+	position: relative;
+	color: black;
+	left: 5%;
+	top: 45%;
+}
+.containersaleBlock__bolsas{
+	width: 30%;
+	height: 250px;
+	background-color: #FF9FFD;
+	display: flex;
+	justify-content: space-between;
+	flex-flow:	wrap-reverse;
+	align-items: center;	
+	border-radius: 15%;	
+}
+.containersaleBlock__bolsasImage{
+	width: 200px;
+	height: 200px;
+	position: relative;
+	left: 55%;
+	bottom: 15%;
+}
+.containersaleBlock__bolsasLine{
+	width: 30%;
+	height: 5px;
+	border-radius: 15%;
+	background-color: #75C7FF;
+	position: relative;
+	right: 62%;
+	bottom: 8%;
+
+}
+.containersaleBlock__bolsasSubtitle{
+	font-size: 30px;
+	color: black;
+	position: relative;
+	top: 32%;
+	left: 8%;
+}
+.containersaleBlock__bolsasParagraph:hover{
+	font-size: 30px;
+ 	background: -webkit-linear-gradient(#000, #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.containersaleBlock__bolsasParagraph{
+	font-size: 25px;
+	color: black;
+	position: relative;
+	top: 52%;
+	right: 50%;
+
+}
+.containersaleBlock__tenis{
+	width: 30%;
+	height: 250px;
+	background-color: #75C7FF;
+	display: flex;
+	justify-content: space-between;
+	flex-flow:	wrap-reverse;
+	align-items: center;	
+	border-radius: 15%;		
+}
+.containersaleBlock__tenisImage{
+	width: 150px;
+	height: 150px;
+	position: relative;
+	left: 60%;
+	bottom: 15%;
+}
+.containersaleBlock__tenisLine{
+	width: 30%;
+	height: 5px;
+	border-radius: 15%;
+	background-color: magenta;
+	position: relative;	
+	right: 40%;
+	bottom: 12%;
+}
+.containersaleBlock__tenisSubtitle{
+	font-size: 30px;
+	color: black;
+	position: relative;
+	right: 75%;
+	bottom: 22%;	
+}
+.containersaleBlock__tenisParagraph:hover{
+	font-size: 30px;
+ 	background: -webkit-linear-gradient(#000, #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
+}
+.containersaleBlock__tenisParagraph{
+	font-size: 25px;
+	color: black;
+	position: relative;	
+	top: 48%;
+	left: 5%;
+}
+.containeresportes{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around; 
+	align-items: flex-end;
+	margin-top: 90px;	
+}
+.colectionesportes{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 25px;
+	border-top: 1px solid #000;
+
+}
+.containeresportesBlock__chuteiras{
+	width: 30%;
+	height: 250px;
+	background-color: #B775FF;
+	display: flex;
+	justify-content: space-between;
+	flex-flow:	wrap-reverse;
+	align-items: center;	
+	border-radius: 15%;		
+}
+.containeresportesBlock__chuteirasImage{
+	width: 220px;
+	height: 250px;
+	position: relative;
+	left: 50%;
+	bottom: 10%;	
+}
+.containeresportesBlock__chuteirasLine{
+	width: 30%;
+	height: 5px;
+	border-radius: 15%;
+	background-color: #00FF09;
+	position: relative;		
+	right: 59%;
+}
+.containeresportesBlock__chuteirasSubtitle{
+	font-size: 30px;
+	color: black;
+	position: relative;	
+	left: 10%;
+	top: 48%;
+}
+.containeresportesBlock__chuteirasParagraph:hover{
+	font-size: 30px;
+ 	background: -webkit-linear-gradient(#000, #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
+}
+.containeresportesBlock__chuteirasParagraph{
+	font-size: 25px;
+	color: black;
+	position: relative;
+	top: 68%;
+	right: 34%;		
+}
+.containeresportesBlock__kimonos{
+	width: 30%;
+	height: 250px;
+	background-color: #ff0000;
+	display: flex;
+	justify-content: space-between;
+	flex-flow:	wrap-reverse;
+	align-items: center;	
+	border-radius: 15%;	
+}
+.containeresportesBlock__kimonosImage{
+	width: 140px;
+	height: 200px;
+	position: relative;
+	left: 63%;
+	bottom: 10%;
+}
+.containeresportesBlock__kimonosLine{
+	width: 30%;
+	height: 5px;
+	border-radius: 15%;
+	background-color: #000;
+	position: relative;
+	right: 30%;
+	bottom: 10%;		
+}
+.containeresportesBlock__kimonosSubtitle{
+	font-size: 30px;
+	color: black;
+	position: relative;		
+	right: 61%;
+	bottom: 20%;
+}
+.containeresportesBlock__kimonosParagraph:hover{
+	font-size: 30px;
+ 	background: -webkit-linear-gradient(#000, #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
+}
+.containeresportesBlock__kimonosParagraph{
+	font-size: 25px;
+	color: black;
+	position: relative;
+	left: 5%;
+	top: 48%;
+}
+.containeresportesBlock__uniformes{
+	width: 30%;
+	height: 250px;
+	background-color: #81FF81;
+	display: flex;
+	justify-content: space-between;
+	flex-flow:	wrap-reverse;
+	align-items: center;	
+	border-radius: 15%;	
+}
+.containeresportesBlock__uniformesImage{
+	width: 150px;
+	height: 200px;
+	position: relative;
+	left: 63%;
+	bottom: 10%;
+}
+.containeresportesBlock__uniformesLine{
+	width: 30%;
+	height: 5px;
+	border-radius: 15%;
+	background-color: #000;
+	position: relative;
+	right: 60%;
+	bottom: 10%;	
+}
+.containeresportesBlock__uniformesSubtitle{
+	font-size: 30px;
+	color: #000;
+	position: relative;		
+	top: 30%;
+	left: 10%;
+}
+.containeresportesBlock__uniformesParagraph:hover{
+	font-size: 30px;
+ 	background: -webkit-linear-gradient(#000, #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;		
+}
+.containeresportesBlock__uniformesParagraph{
+	font-size: 25px;
+	color: black;
+	position: relative;
+	top: 50%;
+	right: 36%;	
+}
+.colectionfeminino{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 25px;	
+	border-top: 1px solid #000;
+}
+.containerfeminino{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around; 
+	align-items: flex-end;
+	margin-top: 90px;
+}
+.containerfemininoBlock__sapatos{
+	width: 30%;
+	height: 250px;
+	background-color: #FF7CD4;
+	display: flex;
+	justify-content: space-between;
+	flex-flow:	wrap-reverse;
+	align-items: center;	
+	border-radius: 15%;		
+}
+.containerfemininoBlock__sapatosImage{
+	width: 150px;
+	height: 150px;
+	position: relative;
+	left: 60%;
+	bottom: 10%;
+}
+.containerfemininoBlock__sapatosLine{
+	width: 30%;
+	height: 5px;
+	border-radius: 15%;
+	background-color: #FF231C;
+	position: relative;	
+	right: 35%;
+	bottom: 10%;
+}
+.containerfemininoBlock__sapatosSubtitle{
+	font-size: 30px;
+	color: #000;
+	position: relative;
+	right: 67%;
+	bottom: 20%;
+}
+.containerfemininoBlock__sapatosParagraph:hover{
+	font-size: 30px;
+ 	background: -webkit-linear-gradient(#000, #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
+}
+.containerfemininoBlock__sapatosParagraph{
+	font-size: 25px;
+	color: black;
+	position: relative;
+	top: 48%;
+	left: 4%;
+}
+.containerfemininoBlock__jaquetas{
+	width: 30%;
+	height: 250px;
+	background-color: #FF5B23;
+	display: flex;
+	justify-content: space-between;
+	flex-flow:	wrap-reverse;
+	align-items: center;	
+	border-radius: 15%;	
+}
+.containerfemininoBlock__jaquetasImage{
+	width: 200px;
+	height: 150px;
+	position: relative;
+	left: 60%;
+	bottom: 10%;
+}
+.containerfemininoBlock__jaquetasLine{
+	width: 30%;
+	height: 5px;
+	border-radius: 15%;
+	background-color: #FFE94E;
+	position: relative;	
+	right: 63%;
+	bottom: 15%;
+}
+.containerfemininoBlock__jaquetasSubtitle{
+	font-size: 30px;
+	color: #000;
+	position: relative;
+	left: 5%;
+	top: 25%;
+}
+.containerfemininoBlock__jaquetasParagraph:hover{
+	font-size: 30px;
+ 	background: -webkit-linear-gradient(#000, #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;		
+}
+.containerfemininoBlock__jaquetasParagraph{
+	font-size: 25px;
+	color: black;
+	position: relative;
+	top: 45%;
+	right: 43%;
+}
+.containerfemininoBlock__saias{
+	width: 30%;
+	height: 250px;
+	background-color: #96EBA4;
+	display: flex;
+	justify-content: space-between;
+	flex-flow:	wrap-reverse;
+	align-items: center;	
+	border-radius: 15%;
+}
+.containerfemininoBlock__saiasImage{
+	width: 200px;
+	height: 150px;
+	position: relative;
+	left: 50%;
+	bottom: 15%;
+}
+.containerfemininoBlock__saiasLine{
+	width: 30%;
+	height: 5px;
+	border-radius: 15%;
+	background-color: #745CFF;
+	position: relative;
+	right: 45%;
+	bottom: 15%;
+}
+.containerfemininoBlock__saiasSubtitle{
+	font-size: 30px;
+	color: #000;
+	position: relative;
+	right: 75%;
+	bottom: 23%;
+}
+.containerfemininoBlock__saiasParagraph:hover{
+	font-size: 30px;
+ 	background: -webkit-linear-gradient(#000, #fff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
+}
+.containerfemininoBlock__saiasParagraph{
+	font-size: 25px;
+	color: black;
+	position: relative;	
+	left: 6%;
+	top: 45%;
+}
+.containerfooter{
+	border-top: 1px solid #000;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+}
+.containerfooterLista{
+	margin-top: 25px;
+}
+.containerfooterLista__sociaisLink{
+	font-size: 20px;
+	color: black;
+}
+.containerfooterLista__sociais{
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+}
+.containerfooterSubtitle{
+	font-size: 30px;
+	text-align: center;
+}
