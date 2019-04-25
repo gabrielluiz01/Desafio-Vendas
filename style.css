@@ -552,6 +552,11 @@ label{
 .containerfooterDireitos{
 	font-size: 15px;
 }
+@media (max-width: 365px){
+	.containerfooterDireitos{
+		text-align: center;
+	}
+}
 @media (max-width: 320px){
 	.containerfooterDireitos{
 		text-align: center;
