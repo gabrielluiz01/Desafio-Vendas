@@ -21,17 +21,11 @@ list-style: none;
 	margin-right: 5px;
 }
 .containermenuLogo{
+	width: 100px;
 	height: 100px;
-	position: relative;
+	border-radius: 50%;
 }
-@media (max-width: 425px){
-	.containermenuLogo{
-		width: 150px;
-		position: relative;
-		right: 15px;
-	}
 
-}
 .containermenuBlock__link{
 	font-size: 25px;
 	color: black;
@@ -130,13 +124,19 @@ label{
 	position: relative;
 	top: 15vh;
 }
+@media (max-width: 768px){
+	.colectionspromotions{
+		position: relative;
+		top: 20vh;
+	}
+}
 @media (max-width: 375px){
 	.colectionspromotions{
 		position: relative;
 		top: 17vh;
 	}
 }
-.containarsaleBlock__camisas{
+.containersaleBlock__camisas{
 	width: 30%;
 	height: 250px;
 	background-color: #FFF695;	
@@ -146,14 +146,15 @@ label{
 	flex-direction: column;
 	align-items: center;
 }
+@media (max-width: 425px){
+	.containersaleBlock__camisas{
+		width: 80%;
+		margin-top: 5px;
+	}
+}
 .containersaleBlock__camisasImage{
 	width: 150px;
 	height: 150px;
-}
-@media (max-width: 425px){
-	.containersaleBlock__camisasImage{
-		width: 120px;
-	}
 }
 .containersaleBlock__camisasLine{
 	width: 30%;
@@ -163,18 +164,8 @@ label{
 	align-self: flex-start;
 	align-self: center;
 }
-@media (max-width: 320px){
-	.containersaleBlock__camisasLine{
-		width: 50%;
-	}
-}
 .containersaleBlock__camisasSubtitle{
 	font-size: 30px;
-}
-@media (max-width: 320px){
-	.containersaleBlock__camisasSubtitle{
-		font-size: 20px;
-	}
 }
 .containersaleBlock__camisasParagraph:hover{
 	font-size: 30px;
@@ -186,16 +177,6 @@ label{
 	font-size: 25px;
 	color: black;
 }
-@media (max-width: 320px){
-	.containersaleBlock__camisasParagraph{
-		text-align: center;
-	}
-}	
-@media (max-width: 425px){
-	.containersaleBlock__camisasParagraph{
-		font-size: 20px;
-	}
-}
 .containersaleBlock__bolsas{
 	width: 30%;
 	height: 250px;
@@ -206,14 +187,15 @@ label{
 	align-items: center;	
 	border-radius: 15%;	
 }
+@media (max-width: 425px){
+	.containersaleBlock__bolsas{
+		width: 80%;
+		margin-top: 5px;
+	}
+}
 .containersaleBlock__bolsasImage{
 	width: 150px;
 	height: 150px;
-}
-@media (max-width: 320px){
-	.containersaleBlock__bolsasImage{
-		width: 130px;
-	}
 }
 .containersaleBlock__bolsasLine{
 	width: 30%;
@@ -221,19 +203,9 @@ label{
 	border-radius: 15%;
 	background-color: #75C7FF;
 }
-@media (max-width: 320px){
-	.containersaleBlock__bolsasLine{
-		width: 50%;
-	}
-}
 .containersaleBlock__bolsasSubtitle{
 	font-size: 30px;
 	color: black;
-}
-@media (max-width: 320px){
-	.containersaleBlock__bolsasSubtitle{
-		font-size: 20px;
-	}
 }
 .containersaleBlock__bolsasParagraph:hover{
 	font-size: 30px;
@@ -245,11 +217,6 @@ label{
 	font-size: 25px;
 	color: black;
 }
-@media (max-width: 425px){
-	.containersaleBlock__bolsasParagraph{
-		font-size: 20px;
-	}
-}
 .containersaleBlock__tenis{
 	width: 30%;
 	height: 250px;
@@ -260,30 +227,21 @@ label{
 	align-items: center;	
 	border-radius: 15%;		
 }
+@media (max-width: 425px){
+	.containersaleBlock__tenis{
+		width: 80%;
+		margin-top: 5px;
+	}
+}
 .containersaleBlock__tenisImage{
 	width: 150px;
 	height: 150px;
-}
-@media (max-width: 375px){
-	.containersaleBlock__tenisImage{
-		width: 80px;
-	}
-}
-@media (max-width: 786px){
-	.containersaleBlock__tenisImage{
-		width: 110px;
-	}
 }
 .containersaleBlock__tenisLine{
 	width: 30%;
 	height: 5px;
 	border-radius: 15%;
 	background-color: magenta;
-}
-@media (max-width: 320px){
-	.containersaleBlock__tenisLine{
-		width: 50%;
-	}
 }
 .containersaleBlock__tenisSubtitle{
 	font-size: 30px;
@@ -298,11 +256,6 @@ label{
 .containersaleBlock__tenisParagraph{
 	font-size: 25px;
 	color: black;
-}
-@media (max-width: 425px){
-	.containersaleBlock__tenisParagraph{
-		font-size: 20px;
-	}
 }
 .containeresportes{
 	display: flex;
@@ -328,30 +281,15 @@ label{
 	align-items: center;	
 	border-radius: 15%;		
 }
-@media (max-width: 320px){
+@media (max-width: 425px){
 	.containeresportesBlock__chuteiras{
-		width: 35%;
+		width: 80%;
+		margin-top: 5px;
 	}
 }
 .containeresportesBlock__chuteirasImage{
 	width: 180px;
 	height: 160px;	
-}
-@media (max-width: width: 320px){
-	.containeresportesBlock__chuteirasImage{
-		width: 50px;
-	}
-}
-@media (max-width: 375px){
-	.containeresportesBlock__chuteirasImage{
-		width: 90px;
-		height: 140px;
-	}
-}
-@media (max-width: 425px){
-	.containeresportesBlock__chuteirasImage{
-		width: 160px;
-	}
 }
 .containeresportesBlock__chuteirasLine{
 	width: 30%;
@@ -359,25 +297,9 @@ label{
 	border-radius: 15%;
 	background-color: #00FF09;
 }
-@media (max-width: 375px){
-	.containeresportesBlock__chuteirasLine{
-		position: relative;
-		
-	}
-}
 .containeresportesBlock__chuteirasSubtitle{
 	font-size: 30px;
 	color: black;
-}
-@media (max-width: 375px){
-	.containeresportesBlock__chuteirasSubtitle{
-		font-size: 20px;
-	}
-}
-@media (max-width: 425px){
-	.containeresportesBlock__chuteirasSubtitle{
-		font-size: 25px;
-	}
 }
 .containeresportesBlock__chuteirasParagraph:hover{
 	font-size: 30px;
@@ -389,19 +311,6 @@ label{
 	font-size: 25px;
 	color: black;	
 }
-@media (max-width: 375px){
-	.containeresportesBlock__chuteirasParagraph{
-		text-align: center;
-		position: relative;
-		bottom: 5px;
-	}
-}
-@media (max-width: 425px){
-	.containeresportesBlock__chuteirasParagraph{
-		font-size: 20px;
-		align-self: center;
-	}
-}
 .containeresportesBlock__kimonos{
 	width: 30%;
 	height: 250px;
@@ -412,15 +321,15 @@ label{
 	align-items: center;	
 	border-radius: 15%;	
 }
+@media (max-width: 425px){
+	.containeresportesBlock__kimonos{
+		width: 80%;
+		margin-top: 5px;
+	}
+}
 .containeresportesBlock__kimonosImage{
 	width: 130px;
 	height: 150px;
-}
-@media (max-width: 320px){
-	.containeresportesBlock__kimonosImage{
-		width: 110px;
-		height: 120px;
-	}
 }
 .containeresportesBlock__kimonosLine{
 	width: 30%;
@@ -432,16 +341,6 @@ label{
 	font-size: 30px;
 	color: black;
 }
-@media (max-width: 320px){
-	.containeresportesBlock__kimonosSubtitle{
-		font-weight: 20px;
-	}
-}
-@media (max-width: 425px){
-	.containeresportesBlock__kimonosSubtitle{
-		font-size: 25px;
-	}
-}
 .containeresportesBlock__kimonosParagraph:hover{
 	font-size: 30px;
  	background: -webkit-linear-gradient(#000, #fff);
@@ -451,11 +350,6 @@ label{
 .containeresportesBlock__kimonosParagraph{
 	font-size: 25px;
 	color: black;
-}
-@media (max-width: 425px){
-	.containeresportesBlock__kimonosParagraph{
-		font-size: 20px;
-	}
 }
 .containeresportesBlock__uniformes{
 	width: 30%;
@@ -467,15 +361,15 @@ label{
 	align-items: center;	
 	border-radius: 15%;	
 }
+@media (max-width: 425px){
+	.containeresportesBlock__uniformes{
+		width: 80%;
+		margin-top: 5px;
+	}
+}
 .containeresportesBlock__uniformesImage{
 	width: 140px;
 	height: 150px;
-}
-@media (max-width: 375px){
-	.containeresportesBlock__uniformesImage{
-		width: 120px;
-		height: 130px;
-	}
 }
 .containeresportesBlock__uniformesLine{
 	width: 30%;
@@ -487,16 +381,6 @@ label{
 	font-size: 30px;
 	color: #000;
 }
-@media (max-width: 320px){
-	.containeresportesBlock__uniformeSubtitle{
-		font-size: 20px;
-	}
-}
-@media (max-width: 425px){
-	.containeresportesBlock__uniformesSubtitle{
-		font-size: 25px;
-	}
-}
 .containeresportesBlock__uniformesParagraph:hover{
 	font-size: 30px;
  	background: -webkit-linear-gradient(#000, #fff);
@@ -506,16 +390,6 @@ label{
 .containeresportesBlock__uniformesParagraph{
 	font-size: 25px;
 	color: black;
-}
-@media (max-width: 375px){
-	.containeresportesBlock__uniformesParagraph{
-		text-align: center;
-	}
-}
-@media (max-width: 425px){
-	.containeresportesBlock__uniformesParagraph{
-		font-size: 20px;
-	}
 }
 .colectionfeminino{
 	font-size: 30px;
@@ -540,15 +414,15 @@ label{
 	align-items: center;	
 	border-radius: 15%;		
 }
+@media (max-width: 425px){
+	.containerfemininoBlock__sapatos{
+		width: 80%;
+		margin-top: 5px;
+	}
+}
 .containerfemininoBlock__sapatosImage{
 	width: 150px;
 	height: 150px;
-}
-@media (max-width: 425px){
-	.containerfemininoBlock__sapatosImage{
-		width: 120px;
-		height: 120px;
-	}
 }
 .containerfemininoBlock__sapatosLine{
 	width: 30%;
@@ -560,11 +434,6 @@ label{
 	font-size: 30px;
 	color: #000;
 }
-@media (max-width: 425px){
-	.containerfemininoBlock__sapatosSubtitle{
-		font-size: 25px;
-	}
-}
 .containerfemininoBlock__sapatosParagraph:hover{
 	font-size: 30px;
  	background: -webkit-linear-gradient(#000, #fff);
@@ -574,16 +443,6 @@ label{
 .containerfemininoBlock__sapatosParagraph{
 	font-size: 25px;
 	color: black;
-}
-@media (max-width: 320px){
-	.containerfemininoBlock__sapatosParagraph{
-		text-align: center;
-	}
-}
-@media (max-width: 425px){
-	.containerfemininoBlock__sapatosParagraph{
-		font-size: 20px;
-	}
 }
 .containerfemininoBlock__jaquetas{
 	width: 30%;
@@ -595,21 +454,17 @@ label{
 	align-items: center;	
 	border-radius: 15%;	
 }
-@media (max-width: 375px){
+@media (max-width: 425px){
 	.containerfemininoBlock__jaquetas{
-		width: 33%;
+		width: 80%;
+		margin-top: 5px;
 	}
 }
 .containerfemininoBlock__jaquetasImage{
 	width: 170px;
 	height: 150px;
 }
-@media (max-width: 425px){
-	.containerfemininoBlock__jaquetasImage{
-		width: 150px;
-		height: 120px;
-	}
-}
+
 .containerfemininoBlock__jaquetasLine{
 	width: 30%;
 	height: 5px;
@@ -622,12 +477,6 @@ label{
 	color: #000;
 
 }
-@media (max-width: 425px){
-	.containerfemininoBlock__jaquetasSubtitle{
-		font-size: 25px;
-
-	}
-}
 .containerfemininoBlock__jaquetasParagraph:hover{
 	font-size: 30px;
  	background: -webkit-linear-gradient(#000, #fff);
@@ -637,16 +486,6 @@ label{
 .containerfemininoBlock__jaquetasParagraph{
 	font-size: 25px;
 	color: black;
-}
-@media (max-width: 320px){
-	.containerfemininoBlock__jaquetasParagraph{
-		text-align: center;
-	}
-}
-@media (max-width: 425px){
-	.containerfemininoBlock__jaquetasParagraph{
-		font-size: 20px;
-	}
 }
 .containerfemininoBlock__saias{
 	width: 30%;
@@ -658,20 +497,15 @@ label{
 	align-items: center;	
 	border-radius: 15%;
 }
-@media (max-width: 375px){
+@media (max-width: 425px){
 	.containerfemininoBlock__saias{
-		width: 35%;
+		width: 80%;
+		margin-top: 5px;
 	}
 }
 .containerfemininoBlock__saiasImage{
 	width: 180px;
 	height: 150px;
-}
-@media (max-width: 425px){
-	.containerfemininoBlock__saiasImage{
-		width: 150px;
-		height: 120px;
-	}
 }
 .containerfemininoBlock__saiasLine{
 	width: 30%;
@@ -714,4 +548,47 @@ label{
 .containerfooterSubtitle{
 	font-size: 30px;
 	text-align: center;
+}
+.containerfooterDireitos{
+	font-size: 15px;
+}
+@media (max-width: 320px){
+	.containerfooterDireitos{
+		text-align: center;
+	}
+}
+.containerfooterEmail{
+	font-size: 15px;
+}
+@media (max-width: 425px){
+	label{
+		display: block;
+	}
+	.containermenuBlock{
+		text-align: center;
+		width: 100%;
+		display: none;
+	}
+	.containermenuBlock__link{
+      display: block;
+      width: 40%;
+      height: 10%;
+      position: relative;
+      left: 1px;
+      font-size: 20px;
+      font-weight: 400;
+      float: right;
+      flex-direction: column;
+      border-bottom: 1px solid white;
+      background-color: black;
+      opacity: 0.8;
+      transition: transform .2s;
+	}
+	.containermenuBlock__link:hover{
+		transform: scale(1);
+		color: black;
+	}
+	#menu-hamburguer:checked ~ .containermenuBlock{
+		display: block;
+	}
 }
